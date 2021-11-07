@@ -1,4 +1,9 @@
 <p> Главная страницаzzz </p>
 
-<p> Имя: <b> <?php echo $name; ?> </b> </p>
-<p> Возраст: <b> <?php echo $age; ?> </b> </p>
+
+<?php foreach ($news as $val): ?>
+    
+    <h3><?php echo $val['title']; ?></h3>
+    <p><?php echo $val['text']; ?></p>
+    <hr>
+<?php endforeach; ?>

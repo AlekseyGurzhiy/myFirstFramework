@@ -2,10 +2,12 @@
 
 namespace application\models;
 
-class Main {
-    
-    public function __construct(){
-        echo 'Model is running';
-    }
+use application\core\Model;
 
+class Main extends Model {
+    
+    public function getNews(){
+        $result = $this->db->row('SELECT title, text FROM news');
+        return $result;
+    }
 }
