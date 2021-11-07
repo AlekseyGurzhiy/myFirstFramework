@@ -10,7 +10,7 @@ class MainController extends Controller
     
     public function indexAction(){
         $db = new Db;
-        $form = '3; DELETE FROM users WHERE id =5';
+        $form = 3;
 
         $params = [
             'id' => $form,
